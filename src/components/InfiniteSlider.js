@@ -11,35 +11,34 @@ const InfiniteSlider = ({ images }) => {
     const container = containerRef.current;
     if (!container) return;
 
-    const startScroll = () => {
-      let scrollAmount = 0;
-      const scrollStep = 5;
+    const scrollStep = 4;
+    let scrollAmount = 0;
 
-      const loop = () => {
-        scrollAmount += scrollStep;
-        if (scrollAmount >= container.scrollWidth / 2) {
-          scrollAmount = 0;
-        }
-        container.scrollLeft = scrollAmount;
-        requestAnimationFrame(loop);
-      };
+    const loop = () => {
+      scrollAmount += scrollStep;
 
+      if (scrollAmount >= container.scrollWidth * 0.5) {
+        scrollAmount = scrollAmount - container.scrollWidth * 0.5;
+      }
+
+      container.scrollLeft = scrollAmount;
       requestAnimationFrame(loop);
     };
 
-    startScroll();
+    requestAnimationFrame(loop);
   }, []);
 
   return (
     <div className={styles.sliderWrapper} ref={containerRef}>
       <div className={styles.slider}>
-        {[...images, ...images].map((src, idx) => (
+        {[...images, ...images, ...images, ...images].map((src, idx) => (
           <Image
             key={idx}
             width={500}
             height={500}
             src={src}
             alt={`img-${idx}`}
+            draggable={false}
           />
         ))}
       </div>

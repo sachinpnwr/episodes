@@ -1,4 +1,6 @@
 import InfiniteSlider from '@/components/InfiniteSlider';
+import CardSlider from '@/components/cardSlider'
+import styles from '../css/page.module.css'
 
 export default function Home() {
 
@@ -7,35 +9,54 @@ export default function Home() {
     '/gap_20.png',
     '/IMG_8394.png',
     '/gap_20.png',
-    // '/slider_img_2.jpg',
     '/IMG_8986.png',
-    // '/slider_img_2.jpg',
-    '/IMG_9015.png',
-    // 
-    // 
-    // 
-    // 
-    '/IMG_8560.png',
-    '/gap_20.png',
-    '/IMG_8394.png',
-    '/gap_20.png',
-    // '/slider_img_2.jpg',
-    '/IMG_8986.png',
-    // '/slider_img_2.jpg',
-    '/IMG_9015.png',
-    '/IMG_8560.png',
-    '/gap_20.png',
-    '/IMG_8394.png',
-    '/gap_20.png',
-    // '/slider_img_2.jpg',
-    '/IMG_8986.png',
-    // '/slider_img_2.jpg',
-    '/IMG_9015.png'
+    '/IMG_5650.png',
+    '/IMG_8394_1.png',
+    '/IMG_4594.png',
+    '/78422FEC-BBE9-40A2-A7E9-35292ADB6DDF.png',
+    '/IMG_4628.png',
+    '/8D4DBBCE-B9E6-49C2-A8A0-D2A9AE845900.png'
+  ];
+
+  const sliderCard = [
+    {
+      img : '/IMG_4669.jpg',
+      desc: 'JOIN THE SCENE',
+      link: 'EPISODE WORLD',
+    },
+    {
+      img : '/IMG_8823.png',
+      desc: 'JOIN THE SCENE',
+      link: 'EPISODE WORLD',
+    },
+    {
+      img : '/DSC00085.png',
+      desc: 'JOIN THE SCENE',
+      link: 'EPISODE WORLD',
+    },
+    {
+      img : '/IMG_4669.jpg',
+      desc: 'JOIN THE SCENE',
+      link: 'EPISODE WORLD',
+    },
+    {
+      img : '/IMG_8823.png',
+      desc: 'JOIN THE SCENE',
+      link: 'EPISODE WORLD',
+    },
+    {
+      img : '/DSC00085.png',
+      desc: 'JOIN THE SCENE',
+      link: 'EPISODE WORLD',
+    },
   ];
 
   return (
     <>
       <InfiniteSlider images={heroSliderImages} />
+      <div className={styles.cardSliderSection}>
+          <CardSlider images={sliderCard} />
+      </div>
     </>
   );
 }

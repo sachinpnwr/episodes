@@ -49,3 +49,16 @@ body {
     max-width: 200px;
   }
 }
+
+.swiper-wrapper{
+  transition-timing-function: linear !important;
+}
+
+.cardSwiper .slider{
+  width: 100%;
+}
+
+.cardSwiper .swiper-slide {
+  width: auto;
+  max-width: 80vw;
+}

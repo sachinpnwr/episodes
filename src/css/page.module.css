@@ -1,0 +1,15 @@
+/* .sliderContainer {
+    display: flex;
+    height: 50vh;
+} */
+
+.cardSliderSection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100dvh;
+    background: url('/IMG_8423.png') no-repeat center;
+    background-size: cover;
+    min-height: 150vh;
+}
+
