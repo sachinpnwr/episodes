@@ -1,6 +1,9 @@
 import InfiniteSlider from '@/components/InfiniteSlider';
 import CardSlider from '@/components/cardSlider'
 import styles from '../css/page.module.css'
+import page17 from '../../public/Page17.png'
+import page15 from '../../public/Page15.png'
+import Image from 'next/image';
 
 export default function Home() {
 
@@ -57,6 +60,8 @@ export default function Home() {
       <div className={styles.cardSliderSection}>
           <CardSlider images={sliderCard} />
       </div>
+      <Image src={page17} width={500} height={500} className={styles.sectionImg} alt='img-banner'/>
+      <Image src={page15} width={500} height={500} className={styles.sectionImg} alt='img-banner'/>
     </>
   );
 }
