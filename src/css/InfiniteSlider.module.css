@@ -1,0 +1,22 @@
+.sliderWrapper {
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    scroll-behavior: auto;
+}
+
+.slider {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.slider img {
+    height: 100dvh;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    user-select: none;
+    pointer-events: none;
+}

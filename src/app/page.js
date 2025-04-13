@@ -1,40 +1,41 @@
+import InfiniteSlider from '@/components/InfiniteSlider';
+
 export default function Home() {
+
+  const heroSliderImages = [
+    '/IMG_8560.png',
+    '/gap_20.png',
+    '/IMG_8394.png',
+    '/gap_20.png',
+    // '/slider_img_2.jpg',
+    '/IMG_8986.png',
+    // '/slider_img_2.jpg',
+    '/IMG_9015.png',
+    // 
+    // 
+    // 
+    // 
+    '/IMG_8560.png',
+    '/gap_20.png',
+    '/IMG_8394.png',
+    '/gap_20.png',
+    // '/slider_img_2.jpg',
+    '/IMG_8986.png',
+    // '/slider_img_2.jpg',
+    '/IMG_9015.png',
+    '/IMG_8560.png',
+    '/gap_20.png',
+    '/IMG_8394.png',
+    '/gap_20.png',
+    // '/slider_img_2.jpg',
+    '/IMG_8986.png',
+    // '/slider_img_2.jpg',
+    '/IMG_9015.png'
+  ];
+
   return (
     <>
-      <div className="container mt-5">
-      <h2>Bootstrap Modal Example</h2>
-
-      <button
-        type="button"
-        className="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#myModal"
-      >
-        Open Modal
-      </button>
-
-      <div className="modal fade" id="myModal" tabIndex="-1" aria-hidden="true">
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title">Modal Title</h5>
-              <button
-                type="button"
-                className="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div className="modal-body">Hello from Bootstrap Modal!</div>
-            <div className="modal-footer">
-              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <InfiniteSlider images={heroSliderImages} />
     </>
   );
 }

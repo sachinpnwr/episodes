@@ -1,6 +1,6 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,4 +9,43 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+}
+
+.main-navbar {
+  border: 1px solid red;
+  max-width: 200px;
+  /* Initial collapsed state */
+  overflow: hidden;
+  /* Prevent overflow during the animation */
+  transition: max-width 0.5s ease-in-out;
+  /* Transition for smooth shrinking */
+}
+
+.main-navbar:has(.show) {
+  animation: smooth-expand 0.5s forwards;
+  /* Animation during expansion */
+}
+
+@keyframes smooth-expand {
+  0% {
+    max-width: 200px;
+  }
+
+  100% {
+    max-width: 600px;
+  }
+}
+
+.main-navbar:not(:has(.show)) {
+  animation: smooth-contract 0.5s forwards;
+}
+
+@keyframes smooth-contract {
+  0% {
+    max-width: 600px;
+  }
+
+  100% {
+    max-width: 200px;
+  }
 }
