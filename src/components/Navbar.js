@@ -11,7 +11,7 @@ const Navbar = () => {
             </div>
             <div className="main-navbar collapse" id="navbarToggleExternalContent">
                 <div className="p-4">
-                  <h5 className="h4">Collapsed content</h5>
+                  <h5 className="h4">Test build</h5>
                   <span className="">Toggleable via the navbar brand.</span>
                 </div>
             </div>
