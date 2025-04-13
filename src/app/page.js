@@ -60,8 +60,8 @@ export default function Home() {
       <div className={styles.cardSliderSection}>
           <CardSlider images={sliderCard} />
       </div>
-      <Image src={page17} width={500} height={500} className={styles.sectionImg} alt='img-banner'/>
-      <Image src={page15} width={500} height={500} className={styles.sectionImg} alt='img-banner'/>
+      <Image unoptimized = {true} src={page17} width={500} height={500} className={styles.sectionImg} alt='img-banner'/>
+      <Image unoptimized = {true} src={page15} width={500} height={500} className={styles.sectionImg} alt='img-banner'/>
     </>
   );
 }
