@@ -22,5 +22,6 @@
 }
 
 img.cardImg{
-    height: 473px;
+    height: auto;
+    width: auto;
 }
