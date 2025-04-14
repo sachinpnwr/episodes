@@ -13,7 +13,7 @@
 }
 
 .slider img {
-    height: 100dvh;
+    height: 100vh;
     width: auto;
     object-fit: contain;
     flex-shrink: 0;
