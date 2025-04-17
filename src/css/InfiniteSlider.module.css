@@ -48,3 +48,8 @@ img.cardImg{
     width: 100%;
 }
 
+@media (max-width  : 767px) {
+    .coloredStrip{
+        top: calc(50% + 38px);
+    }
+}
