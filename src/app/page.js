@@ -86,6 +86,19 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className='row my-5'>
+          <div className='col-12 col-md-6'>
+            <div className='p-4'>
+            <p className='mb-0'> <strong>At Episode,</strong> transparency is key. We want you to not just wear the story, but to own the entire process. Our studio sessions are where the magic happens-this is our favorite part. Here, we play dress-up with purpose, curating styles that reflect your unique story. Every garment is chosen with careful attention to size, body shape, and, of course, a print that truly speaks to you.
+            It's not just about fashion; it's about creating a personal art piece with you in mind. With the perfect track playing in the background, we capture moments where real personalities shine through. This is where your story comes to life.</p>
+            </div>
+          </div>
+          <div className='col-12 col-md-6'>
+            <div className='p-4 bottom-right'>
+              <p className='mb-0'>MORE ABOUT <strong>[EPISODE]</strong></p>
+            </div>
+          </div>
+        </div>
       </div>
       <Image unoptimized = {true} src={page17} width={500} height={500} className={styles.sectionImg} alt='img-banner'/>
       <Image unoptimized = {true} src={page15} width={500} height={500} className={styles.sectionImg} alt='img-banner'/>
