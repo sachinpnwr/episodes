@@ -11,45 +11,26 @@ body {
   font-size: 16px;
 }
 
-.main-navbar {
+nav.main-navbar {
   border: 1px solid red;
+  width: 100%;
   max-width: 200px;
-  /* Initial collapsed state */
   overflow: hidden;
-  /* Prevent overflow during the animation */
   transition: max-width 0.5s ease-in-out;
-  /* Transition for smooth shrinking */
 }
 
-.main-navbar:has(.show) {
-  animation: smooth-expand 0.5s forwards;
-  /* Animation during expansion */
+nav.main-navbar.sm{
+  max-width: 200px;
+}
+nav.main-navbar.md{
+  max-width: 400px;
+}
+nav.main-navbar.lg{
+  max-width: 600px;
 }
 
-@keyframes smooth-expand {
-  0% {
-    max-width: 200px;
-  }
 
-  100% {
-    max-width: 600px;
-  }
-}
-
-.main-navbar:not(:has(.show)) {
-  animation: smooth-contract 0.5s forwards;
-}
-
-@keyframes smooth-contract {
-  0% {
-    max-width: 600px;
-  }
-
-  100% {
-    max-width: 200px;
-  }
-}
-
+/* // swiper js css */
 .swiper-wrapper{
   transition-timing-function: linear !important;
 }
@@ -61,4 +42,42 @@ body {
 .cardSwiper .swiper-slide {
   width: auto;
   max-width: 80vw;
+}
+
+#top-slider{
+  font-size: 16px;
+}
+
+#top-slider .rfm-initial-child-container, .rfm-marquee{
+  min-width: 100%;
+  justify-content: space-around;
+  gap: 4rem;
+}
+
+#top-slider .strip-title{
+  color: white;
+  font-size: 8rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+#top-slider .strip-text{
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+@media (max-width  : 767px) {
+  #top-slider .strip-title{
+    font-size: 4rem;
+  }
+
+  
+  #top-slider .strip-text{
+    font-size: 1rem;
+  }
+
+  #top-slider .rfm-initial-child-container, .rfm-marquee{
+    gap: 2rem;
+  }
 }
