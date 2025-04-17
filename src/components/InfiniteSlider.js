@@ -53,7 +53,7 @@ const InfiniteSlider = ({ images }) => {
           </div>
         </div>
         <div className={styles.stripSlider}>
-          <Marquee speed={150} autoFill={true} gradient={false} direction="right">
+          <Marquee speed={150} autoFill={true} direction="right">
             <h1 className="strip-title">EPISODE WORLD</h1>
             <div className="d-flex flex-column align-items-center">
               <p className="strip-text">Drop - 1</p>
